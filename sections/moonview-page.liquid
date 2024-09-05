@@ -1,0 +1,70 @@
+<div>
+    cdafkhds
+</div>
+{% schema %}
+{
+  "name": "Moonview",
+  "tag": "section",
+  "class": "moonview",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Moonview"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+     {
+       "name": "Planet",
+       "type": "planet",
+       "settings": [
+         {
+           "type": "text",
+           "id": "title",
+           "label": "Link Text"                                            
+         },                                                                                                                                 
+         {
+           "type": "page",
+           "id": "page",
+           "label": "Page"
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "Moonview",
+      "settings": {
+        "title": "Moonview"
+      },
+      "blocks": [
+        {
+          "type": "planet"
+        },
+        {
+          "type": "planet"
+        }
+      ]
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Slideshow"
+    },
+    "fr": {
+      "title": "Diaporama"
+    }
+  },
+  "enabled_on": {
+    "templates": ["*"],
+    "groups": ["footer"]
+  }
+}
+{% endschema %}
