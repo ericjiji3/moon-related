@@ -1,15 +1,17 @@
 <style>
 .moonview{
   width: 100%;
-  height: 100dvh;
+  height: calc(100dvh - 220px);
+  
 }
 .planets-container{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .planets-container .background-planets{
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
   background-image: url("https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Navigation-Desktop.gif");
@@ -22,7 +24,10 @@
 <div class="planets-container">
     <div class="background-planets"></div>
     <div>
-    
+      {%- for block in section.blocks -%}
+        <span>{{ block.settings.heading }}</span>
+        dfad
+      {%- endfor -%}
     </div>
 </div>
 {% schema %}
@@ -46,7 +51,7 @@
        "settings": [
          {
            "type": "text",
-           "id": "title",
+           "id": "heading",
            "label": "Link Text"                                            
          },                                                                                                                                 
          {

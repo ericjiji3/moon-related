@@ -6,7 +6,14 @@
 {% endcomment %}
 
 <nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
+  <div class="link-container">
+    {% assign url = request.path %}
+    {% if url == '/'  %}
+      <span class="link-text">MOONVIEW</span>
+    {% endif %}
+    <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
+  </div>
+  {% comment %} <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}
@@ -99,5 +106,5 @@
         {%- endif -%}
       </li>
     {%- endfor -%}
-  </ul>
+  </ul> {% endcomment %}
 </nav>

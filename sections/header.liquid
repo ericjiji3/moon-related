@@ -273,7 +273,7 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
-
+      
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -292,6 +292,23 @@
           </div>
         {%- endif -%}
       </a>
+      <a class="header__icon link focus-inset">
+        <svg id="rocket" class="icon" xmlns="http://www.w3.org/2000/svg" width="13.047" height="13.046" viewBox="0 0 13.047 13.046">
+          <path id="Path_10" data-name="Path 10" d="M8.2,20.933l3.726-3.726.659.659L8.858,21.592Z" transform="translate(-5.734 -11.012)" fill="#fff"/>
+          <path id="Path_11" data-name="Path 11" d="M9.238,15.3a.465.465,0,0,1-.461-.4l-.466-3.262.932-.13.35,2.456,1.51-1.216v-3.5a.466.466,0,0,1,.135-.331l1.9-1.9a4.165,4.165,0,0,0,1.23-2.963V3.182H13.5a4.165,4.165,0,0,0-2.963,1.23l-1.9,1.9a.466.466,0,0,1-.331.135H4.8L3.586,7.962l2.456.35-.13.932L2.65,8.778a.467.467,0,0,1-.3-.755l1.864-2.33a.466.466,0,0,1,.363-.181H8.115L9.872,3.751A5.088,5.088,0,0,1,13.5,2.25h.867a.932.932,0,0,1,.932.932v.867a5.088,5.088,0,0,1-1.5,3.625L12.034,9.43v3.537a.466.466,0,0,1-.177.364l-2.33,1.864A.466.466,0,0,1,9.238,15.3Z" transform="translate(-2.248 -2.25)" fill="#fff"/>
+        </svg>
+        
+      </a>
+      <a class="header__icon link focus-inset">
+        <svg id="logo-instagram" class="icon" xmlns="http://www.w3.org/2000/svg" width="13.046" height="13.046" viewBox="0 0 13.046 13.046">
+          <path id="Path_7" data-name="Path 7" d="M11.491,3.337a2.726,2.726,0,0,1,2.718,2.718v5.436a2.726,2.726,0,0,1-2.718,2.718H6.055a2.726,2.726,0,0,1-2.718-2.718V6.055A2.726,2.726,0,0,1,6.055,3.337h5.436m0-1.087H6.055A3.816,3.816,0,0,0,2.25,6.055v5.436A3.816,3.816,0,0,0,6.055,15.3h5.436a3.816,3.816,0,0,0,3.8-3.805V6.055A3.816,3.816,0,0,0,11.491,2.25Z" transform="translate(-2.25 -2.25)" fill="#fff"/>
+          <path id="Path_8" data-name="Path 8" d="M25.378,9.131a.814.814,0,1,1,.577-.238A.816.816,0,0,1,25.378,9.131Z" transform="translate(-15.321 -5.326)" fill="#fff"/>
+          <path id="Path_9" data-name="Path 9" d="M13.387,11.212a2.174,2.174,0,1,1-2.174,2.174,2.174,2.174,0,0,1,2.174-2.174m0-1.087a3.262,3.262,0,1,0,3.262,3.262A3.262,3.262,0,0,0,13.387,10.125Z" transform="translate(-6.863 -6.863)" fill="#fff"/>
+        </svg>
+      </a>
+      
+      
+      
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
