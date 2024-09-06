@@ -12,14 +12,6 @@
     "moonview_page_6ej83L": {
       "type": "moonview-page",
       "blocks": {
-        "planet_nxbcEA": {
-          "type": "planet",
-          "settings": {
-            "title": "SHOP",
-            "page": "",
-            "image": "shopify:\/\/shop_images\/Earth.gif"
-          }
-        },
         "planet_rDJ8MU": {
           "type": "planet",
           "settings": {
@@ -28,12 +20,12 @@
             "image": "shopify:\/\/shop_images\/Mercury.gif"
           }
         },
-        "planet_xbtKwN": {
+        "planet_nxbcEA": {
           "type": "planet",
           "settings": {
-            "title": "CONTACT",
+            "title": "SHOP",
             "page": "",
-            "image": "shopify:\/\/shop_images\/Mars.gif"
+            "image": "shopify:\/\/shop_images\/Earth.gif"
           }
         },
         "planet_7BLwyU": {
@@ -43,13 +35,21 @@
             "page": "",
             "image": "shopify:\/\/shop_images\/Neptune.gif"
           }
+        },
+        "planet_xbtKwN": {
+          "type": "planet",
+          "settings": {
+            "title": "CONTACT",
+            "page": "",
+            "image": "shopify:\/\/shop_images\/Mars.gif"
+          }
         }
       },
       "block_order": [
-        "planet_nxbcEA",
         "planet_rDJ8MU",
-        "planet_xbtKwN",
-        "planet_7BLwyU"
+        "planet_nxbcEA",
+        "planet_7BLwyU",
+        "planet_xbtKwN"
       ],
       "settings": {
         "title": "Moonview"
