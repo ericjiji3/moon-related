@@ -16,17 +16,54 @@
   transform: translateX(-50%);
   background-image: url("https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Navigation-Desktop.gif");
   background-size: cover;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 32%;
   display: block;
+}
+.planets-container .planet-container{
+  display: inline-block;
+}
+.planets-links{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.planets-container .planet-container#planet1{
+  position: absolute;
+  top: 30rem;
+  left: calc(50% - 60rem);
+  transform: translateX(-50%);
+}
+.planets-container .planet-container#planet1 img{
+  width: 30rem;
+}
+.planets-container .planet-container#planet2{
+  position: absolute;
+  top: 30rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.planets-container .planet-container#planet2 img{
+  width: 500px;
 }
 </style>
 <div class="planets-container">
     <div class="background-planets"></div>
-    <div>
+    <div class="planets-links">
       {%- for block in section.blocks -%}
-        <span>{{ block.settings.heading }}</span>
-        dfad
+        <div class="planet-container" id="planet{{ forloop.index }}">
+          {% if block.settings.image %}
+            {% comment %} {{ block.settings.image | img_tag: block.settings.heading }}         {% endcomment %}
+            
+            <img 
+              src="{{ block.settings.image | image_url: '325x325' }}" 
+              alt="{{ block.settings.heading }}" 
+              width="325" 
+              height="325"> 
+          {% endif %}
+          <span>{{ block.settings.heading }}</span>
+        </div>
+        
       {%- endfor -%}
     </div>
 </div>
