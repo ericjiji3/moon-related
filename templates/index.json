@@ -16,20 +16,40 @@
           "type": "planet",
           "settings": {
             "title": "",
-            "page": ""
+            "page": "",
+            "image": "shopify:\/\/shop_images\/Earth.gif"
           }
         },
         "planet_rDJ8MU": {
           "type": "planet",
           "settings": {
             "title": "",
-            "page": ""
+            "page": "",
+            "image": "shopify:\/\/shop_images\/Mercury.gif"
+          }
+        },
+        "planet_xbtKwN": {
+          "type": "planet",
+          "settings": {
+            "title": "",
+            "page": "",
+            "image": "shopify:\/\/shop_images\/Mars.gif"
+          }
+        },
+        "planet_7BLwyU": {
+          "type": "planet",
+          "settings": {
+            "title": "",
+            "page": "",
+            "image": "shopify:\/\/shop_images\/Neptune.gif"
           }
         }
       },
       "block_order": [
         "planet_nxbcEA",
-        "planet_rDJ8MU"
+        "planet_rDJ8MU",
+        "planet_xbtKwN",
+        "planet_7BLwyU"
       ],
       "settings": {
         "title": "Moonview"
