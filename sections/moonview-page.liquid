@@ -56,7 +56,7 @@
             {% comment %} {{ block.settings.image | img_tag: block.settings.heading }}         {% endcomment %}
             
             <img 
-              src="{{ block.settings.image | image_url: '325x325' }}" 
+              src="{{ block.settings.image | image_url: width: 325, height: 325 }}" 
               alt="{{ block.settings.heading }}" 
               width="325" 
               height="325"> 
