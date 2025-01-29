@@ -2797,6 +2797,12 @@ details[open] > .header__submenu {
     display: flex;
     align-items: normal!important;
   }
+  .header__icons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+  }
 }
  
 .header__menu {
