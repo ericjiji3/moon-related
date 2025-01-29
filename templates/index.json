@@ -24,7 +24,7 @@
           "type": "planet",
           "settings": {
             "heading": "SHOP",
-            "page": "shopify://collections",
+            "page": "shopify://collections/frontpage",
             "image": "shopify://shop_images/Earth.gif"
           }
         },
