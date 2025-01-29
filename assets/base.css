@@ -2792,6 +2792,9 @@ details[open] > .header__submenu {
     margin-left: 0;
   }
 }
+.header-wrapper--border-bottom{
+  border-bottom: none!important;
+}
 @media(max-width: 989px){
   .desktop-localization-wrapper{
     display: none;
