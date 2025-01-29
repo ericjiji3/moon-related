@@ -2795,6 +2795,7 @@ details[open] > .header__submenu {
 @media(max-width: 989px){
   .header{
     display: flex;
+    align-items: normal!important;
   }
 }
  
