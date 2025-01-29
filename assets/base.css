@@ -2793,6 +2793,9 @@ details[open] > .header__submenu {
   }
 }
 @media(max-width: 989px){
+  .desktop-localization-wrapper{
+    display: none;
+  }
   .header{
     display: flex;
     align-items: normal!important;
