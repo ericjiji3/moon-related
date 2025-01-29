@@ -17,7 +17,7 @@
         "padding_bottom": 28
       }
     },
-    "moon_3d_page_QHc9NX": {
+    "moon_3d_page_LtfgTV": {
       "type": "moon-3d-page",
       "settings": {
         "title": "3D Moonview"
@@ -26,6 +26,6 @@
   },
   "order": [
     "main",
-    "moon_3d_page_QHc9NX"
+    "moon_3d_page_LtfgTV"
   ]
 }
