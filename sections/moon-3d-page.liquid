@@ -65,12 +65,29 @@ model-viewer {
     </div>
     <span>MOONRELATED 2025</span>
     <div class="time-container">
-      <span>(</span><span>00 : 00 : 00</span><span>)</span>
+      <span>(</span><span id="military-time">00 : 00 : 00</span><span>)</span>
     </div>
   </div>   
 </div>
 <script>
-</script>
+        function getMilitaryTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            return `${hours}:${minutes}:${seconds}`;
+        }
+
+        function updateMilitaryTime() {
+            document.getElementById('military-time').textContent = getMilitaryTime();
+        }
+
+        // Update the time every second
+        setInterval(updateMilitaryTime, 1000);
+
+        // Initialize immediately
+        updateMilitaryTime();
+    </script>
 {% schema %}
   {
     "name": "3D Moonview",
