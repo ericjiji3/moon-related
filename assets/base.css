@@ -2792,7 +2792,12 @@ details[open] > .header__submenu {
     margin-left: 0;
   }
 }
-
+@media(max-width: 989px){
+  .header{
+    display: flex;
+  }
+}
+ 
 .header__menu {
   padding: 0 1rem;
 }
