@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "moonview_page_k8byAm": {
@@ -17,15 +17,15 @@
           "settings": {
             "heading": "ABOUT",
             "page": "",
-            "image": "shopify:\/\/shop_images\/Mercury.gif"
+            "image": "shopify://shop_images/Mercury.gif"
           }
         },
         "planet_b3UB6c": {
           "type": "planet",
           "settings": {
             "heading": "SHOP",
-            "page": "",
-            "image": "shopify:\/\/shop_images\/Earth.gif"
+            "page": "shopify://collections",
+            "image": "shopify://shop_images/Earth.gif"
           }
         },
         "planet_aNXmdc": {
@@ -33,7 +33,7 @@
           "settings": {
             "heading": "EDITORIAL",
             "page": "",
-            "image": "shopify:\/\/shop_images\/Neptune.gif"
+            "image": "shopify://shop_images/Neptune.gif"
           }
         },
         "planet_TikVWz": {
@@ -41,7 +41,7 @@
           "settings": {
             "heading": "CONTACT",
             "page": "",
-            "image": "shopify:\/\/shop_images\/Mars.gif"
+            "image": "shopify://shop_images/Mars.gif"
           }
         }
       },
