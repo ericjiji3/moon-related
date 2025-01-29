@@ -16,9 +16,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "moon_3d_page_QHc9NX": {
+      "type": "moon-3d-page",
+      "settings": {
+        "title": "3D Moonview"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "moon_3d_page_QHc9NX"
   ]
 }
