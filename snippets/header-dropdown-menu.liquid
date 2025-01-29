@@ -9,14 +9,14 @@
   {% assign url = request.path %}
   {% if url == '/'  %}
      <a class="link-container moon-link" href="/pages/moonview">
-      <span class="link-text"><a href="/">MOONVIEW</a></span>
+      <span class="link-text">MOONVIEW</span>
       <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
     </a>
   {% else  %}
-    <a class="link-container moon-link" href="/">
-      <span class="link-text"><a href="/">HOME</a></span>
+    <div class="link-container moon-link" href="/">
+      <span class="link-text">HOME</span>
       <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
-    </a>
+    </div>
   {% endif %}
 
   {% comment %} <ul class="list-menu list-menu--inline" role="list">
