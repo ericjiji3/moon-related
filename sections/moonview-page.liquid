@@ -51,7 +51,7 @@
     <div class="background-planets"></div>
     <div class="planets-links">
       {%- for block in section.blocks -%}
-        <div class="planet-container" id="planet{{ forloop.index }}">
+        <a class="planet-container" id="planet{{ forloop.index }}" href="{{ block.settings.page }}">
           {% if block.settings.image %}
             {% comment %} {{ block.settings.image | img_tag: block.settings.heading }}         {% endcomment %}
             
@@ -62,7 +62,7 @@
               height="325"> 
           {% endif %}
           <span>{{ block.settings.heading }}</span>
-        </div>
+        </a>
         
       {%- endfor -%}
     </div>
