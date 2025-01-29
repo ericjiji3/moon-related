@@ -8,19 +8,15 @@
 <nav class="header__inline-menu">
   {% assign url = request.path %}
   {% if url == '/'  %}
-     <div class="link-container moon-link">
-      <a href="/pages/moonview">
+     <a class="link-container moon-link" href="/pages/moonview">
       <span class="link-text"><a href="/">MOONVIEW</a></span>
       <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
-      </a>
-    </div>
+    </a>
   {% else  %}
-    <div class="link-container moon-link">
-      <a href="/">
+    <a class="link-container moon-link" href="/">
       <span class="link-text"><a href="/">HOME</a></span>
       <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
-      </a>
-    </div>
+    </a>
   {% endif %}
 
   {% comment %} <ul class="list-menu list-menu--inline" role="list">
