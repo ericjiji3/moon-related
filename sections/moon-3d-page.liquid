@@ -61,7 +61,7 @@ model-viewer {
   <model-viewer src="https://cdn.shopify.com/3d/models/o/fd0850db3517019d/moon.glb" loading="eager" disable-pan interaction-prompt="none" ar ar-modes="webxr scene-viewer quick-look" style="--poster-color: transparent;" disable-zoom camera-controls tone-mapping="neutral" poster="" shadow-intensity="0"> </model-viewer>
   <div class="moon-info">
     <div class="coordinates-container">
-      <span>(</span>  <span id="mouse-coordinates">X: 0, Y: 0</span><span>)</span>
+      <span>(</span>  <span id="mouse-coordinates">x: 0, y: 0</span><span>)</span>
     </div>
     <span>MOONRELATED 2025</span>
     <div class="time-container">
@@ -87,6 +87,15 @@ model-viewer {
 
         // Initialize immediately
         updateMilitaryTime();
+
+  function trackMouse(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+            document.getElementById('mouse-coordinates').textContent = `x: ${x}, y: ${y}`;
+        }
+
+        // Attach mousemove event listener
+        document.addEventListener('mousemove', trackMouse);
     </script>
 {% schema %}
   {
