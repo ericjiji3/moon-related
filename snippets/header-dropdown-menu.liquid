@@ -6,15 +6,23 @@
 {% endcomment %}
 
 <nav class="header__inline-menu">
-  <div class="link-container moon-link">
-    {% assign url = request.path %}
-    {% if url == '/'  %}
-      <span class="link-text"><a href="/pages/moonview">MOONVIEW</a></span>
-    {% else  %}
+  {% assign url = request.path %}
+  {% if url == '/'  %}
+     <div class="link-container moon-link">
+      <a href="/pages/moonview">
+      <span class="link-text"><a href="/">MOONVIEW</a></span>
+      <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
+      </a>
+    </div>
+  {% else  %}
+    <div class="link-container moon-link">
+      <a href="/">
       <span class="link-text"><a href="/">HOME</a></span>
-    {% endif %}
-    <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
-  </div>
+      <img src="https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Earth.gif" width="75" height="75" alt="oops"/>
+      </a>
+    </div>
+  {% endif %}
+
   {% comment %} <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
