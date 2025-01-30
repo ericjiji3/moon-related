@@ -26,8 +26,8 @@
   --color-background: none;
 }
 
-.contact .field:before {
-  border: none;
+.contact .field:after {
+  box-shadow: none;
 }
 
 
