@@ -2343,7 +2343,11 @@ input[type='checkbox'] {
 .section-header.shopify-section-group-header-group {
   z-index: 3;
 }
-
+@media(max-width: 989px){
+  .section-header{
+    padding-top: 75px;
+  }
+}
 .shopify-section-header-sticky {
   position: sticky;
   top: 0;
