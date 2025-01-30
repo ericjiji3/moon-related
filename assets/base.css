@@ -2516,7 +2516,11 @@ input[type='checkbox'] {
   line-height: 1;
   color: rgba(var(--color-foreground), 0.75);
 }
-
+@media(max-width: 989px){
+  .header__heading-link .h2 {
+    font-size: 2rem;
+  }
+}
 .header__heading-logo {
   height: auto;
   max-width: 100%;
