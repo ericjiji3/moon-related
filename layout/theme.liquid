@@ -311,6 +311,20 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+       {% assign url = request.path %}
+       {% if url == '/' or url == '/pages/contact'  %}
+       <div class="moon-info">
+        <div class="coordinates-container">
+          <span>(</span>  <span id="mouse-coordinates">x: 0, y: 0</span><span>)</span>
+        </div>
+        <span>MOONRELATED 2025</span>
+        <div class="time-container">
+          <span>(</span><span id="military-time">00 : 00 : 00</span><span>)</span>
+        </div>
+      </div>  
+      {% else  %}
+        <></>
+      {% endif %}
     </main>
 
     {% sections 'footer-group' %}
