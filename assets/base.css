@@ -2392,6 +2392,9 @@ input[type='checkbox'] {
   border: 1px solid #ffffff;
   border-radius: 30px;
 }
+.link-container img{
+    margin: auto;
+  }
 @media(max-width: 989px){
   .link-container{
     padding: 1rem;
@@ -2401,6 +2404,7 @@ input[type='checkbox'] {
   .link-container img{
     width: 50px;
     height: auto;
+    margin: auto;
   }
   .header__icon .icon{
     width: 1.5rem!important;
