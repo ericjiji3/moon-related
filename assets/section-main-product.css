@@ -1286,6 +1286,9 @@ a.product__text {
   position: relative;
   width: 100%;
   max-width: calc(100% - calc(var(--media-border-width) * 2));
+  border: 1px solid white;
+  border-radius: 50px;
+  
 }
 
 .product-media-container.constrain-height {
