@@ -71,6 +71,30 @@ justify-content: space-between;
     box-shadow: none;
 }
 
+.button__parent .button:before {
+  content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.button__parent .button:after {
+  content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+
 .contact-divider {
   padding: 0;
   padding-left: 2.5rem;
