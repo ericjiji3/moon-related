@@ -18,6 +18,11 @@
 .header__heading-link .h2{
   font-family: aSpace!important;
 }
+@media(max-width: 989px){
+  .header__heading-link{
+    align-content: center;
+  }
+}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
