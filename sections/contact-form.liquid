@@ -15,6 +15,7 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
+  
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -51,10 +52,10 @@
           </li>
         </ul>
       {%- endif -%}
+              <div class="field__parent"> 
+
       <div class="contact__fields">
-        
-        <div class="field__parent"> 
-        <div class="field">
+                <div class="field">
           <input
             class="field__input"
             autocomplete="name"
@@ -139,6 +140,8 @@
     {%- endform -%}
   </div>
 </div>
+
+  
 
 {% schema %}
 {
