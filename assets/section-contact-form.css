@@ -35,7 +35,8 @@
 }
 
 .contact__button {
-  
+  position: relative;
+  bottom: 0;
 }
 
 
