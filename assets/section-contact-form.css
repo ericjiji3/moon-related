@@ -24,6 +24,7 @@
 .contact .field__input {
   margin-bottom: 1.5rem;
   --color-background: none;
+  pointer-events: none !important;
 }
 
 .contact .field:after {
@@ -60,6 +61,11 @@ justify-content: space-between;
 
 .contact-divider {
   padding: 1.5rem;
+}
+
+.contact .field {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 750px) {
