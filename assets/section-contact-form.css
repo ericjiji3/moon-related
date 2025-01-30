@@ -42,7 +42,8 @@
 .contact__sub {
   height: 100%;
   display: flex;
-  flex-direction: space-between;
+  flex-direction: column;
+justify-content: space-between;
 }
 
 .field__parent {
