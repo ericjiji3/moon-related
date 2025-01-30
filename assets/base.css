@@ -2386,7 +2386,7 @@ input[type='checkbox'] {
 .moon-info{
     display: flex;
     position: absolute;
-    bottom: 130px;
+    bottom: -115px;
     width: 100%;;
     justify-content: space-between;
     padding: 0 200px;
