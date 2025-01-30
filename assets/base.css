@@ -1251,7 +1251,10 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)
     rgba(var(--color-shadow), var(--shadow-opacity));
 }
-
+.button:hover{
+  background-color: white;
+  color: black;
+}
 .button:after,
 .shopify-challenge__button:after,
 .customer button:after,
