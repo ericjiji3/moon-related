@@ -21,11 +21,6 @@
   margin-top: 0.2rem;
 }
 
-.contact .field {
-  margin-bottom: 1.5rem;
-      --color-background: none;
-}
-
 .contact .field__input {
   margin-bottom: 1.5rem;
       --color-background: none;
