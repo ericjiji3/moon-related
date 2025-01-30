@@ -187,6 +187,10 @@ justify-content: space-between;
 }
 
   .contact__sub {
+    padding: 10px;
+  }
+
+  .field__input {
     padding: 5px;
   }
   
