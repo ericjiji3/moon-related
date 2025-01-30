@@ -2372,6 +2372,10 @@ input[type='checkbox'] {
   .link-container{
     padding: 1rem;
   }
+  .link-container img{
+    width: 50px;
+    height: auto;
+  }
 }
 .header-wrapper {
   display: block;
