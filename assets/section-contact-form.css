@@ -15,7 +15,8 @@
 }
 
 .contact {
-  width: 100vw;
+  width: 50vw;
+    height: 50vh;
   background-color: #fff;
   border-radius: 50px;
 }
