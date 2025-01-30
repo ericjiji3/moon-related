@@ -2867,6 +2867,7 @@ details[open] > .header__submenu {
     flex-direction: column;
     height: 100%;
     gap: 15px;
+    padding-right: 0;
   }
 }
  
