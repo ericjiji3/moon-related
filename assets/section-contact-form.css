@@ -129,6 +129,14 @@ justify-content: space-between;
   transform: none !important;
 }
 
+.contact .field__input,
+.contact .text-area {
+  font-size: 1rem !important; /* Set fixed text size */
+  transform: none !important;
+  transition: none !important;
+}
+
+
 
 @media screen and (min-width: 750px) {
 
