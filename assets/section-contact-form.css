@@ -185,5 +185,9 @@ justify-content: space-between;
   border-color: #fff;
   padding: 0px;
 }
+
+  .contact__sub {
+    padding: 5px;
+  }
   
 }
