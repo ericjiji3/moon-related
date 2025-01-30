@@ -52,6 +52,8 @@
         </ul>
       {%- endif -%}
       <div class="contact__fields">
+        
+        <div class="field__parent"> 
         <div class="field">
           <input
             class="field__input"
@@ -124,10 +126,15 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
+</div>
+
+      
+      <div class="button__parent">
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
         </button>
+      </div>
       </div>
     {%- endform -%}
   </div>
