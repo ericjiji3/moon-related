@@ -2383,6 +2383,15 @@ input[type='checkbox'] {
   align-items: baseline!important;
   width: 100%;
 }
+.moon-info{
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    width: 100%;;
+    justify-content: space-between;
+    padding: 0 200px;
+    color: white;
+  }
 .link-container{
   display: flex;
   width: 125px;
