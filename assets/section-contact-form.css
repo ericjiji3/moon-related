@@ -82,19 +82,21 @@ justify-content: space-between;
 }
 
 .contact .field__input,
-.text-area {
+.contact .text-area {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+  background: transparent !important; /* Ensure no background effects */
 }
 
 .contact .field__input:hover,
 .contact .field__input:focus,
-.text-area:hover,
-.text-area:focus {
+.contact .text-area:hover,
+.contact .text-area:focus {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+  background: transparent !important;
 }
 
 
