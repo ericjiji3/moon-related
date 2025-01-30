@@ -24,7 +24,7 @@
 .contact .field__input {
   margin-bottom: 1.5rem;
   --color-background: none;
-  border: none;
+  border: 0;
 }
 
 
