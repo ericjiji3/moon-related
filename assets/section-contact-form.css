@@ -21,7 +21,7 @@ text-wrap: none;
 }
 
 .invalid-email {
-  min-width: 20px;
+  width: 120px;
 }
 
 .contact .icon-success {
