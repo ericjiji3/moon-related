@@ -2348,6 +2348,11 @@ input[type='checkbox'] {
     padding-top: 75px;
   }
 }
+@media(max-width: 500px){
+  .section-header{
+    padding-top: 65px;
+  }
+}
 .shopify-section-header-sticky {
   position: sticky;
   top: 0;
