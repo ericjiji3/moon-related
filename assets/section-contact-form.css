@@ -39,6 +39,10 @@
   bottom: 0;
 }
 
+.contact__sub {
+  height: 100%;
+}
+
 
 @media screen and (min-width: 750px) {
   .contact .field {
