@@ -50,6 +50,7 @@ text-wrap: none;
 .button__parent .button:before,
 .button__parent .button:after {
   background-color: transparent !important;
+  color: #fff;
 }
 
 .contact__sub {
