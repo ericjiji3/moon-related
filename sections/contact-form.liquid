@@ -92,6 +92,7 @@
         
         
         <div class="field">
+          <p>NAME:</p>
           <input
             class="field__input"
             autocomplete="name"
@@ -101,7 +102,7 @@
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             <!-- placeholder="{{ 'templates.contact.form.name' | t }}" -->
           >
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <!-- <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label> -->
         </div>
 
         <div class="contact-divider"><p>--------------------------------</p></div>
@@ -118,9 +119,9 @@
         >
           {{- form.body -}}
         </textarea>
-        <label class="form__label field__label" for="ContactForm-body">
+        <!-- <label class="form__label field__label" for="ContactForm-body">
           {{- 'templates.contact.form.comment' | t -}}
-        </label>
+        </label> -->
       </div>
 </div>
 
