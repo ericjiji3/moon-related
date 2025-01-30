@@ -81,6 +81,23 @@ justify-content: space-between;
   opacity: 1 !important;
 }
 
+.contact .field__input,
+.text-area {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.contact .field__input:hover,
+.contact .field__input:focus,
+.text-area:hover,
+.text-area:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
 @media screen and (min-width: 750px) {
 
   .section-template--23227293204785__form-padding {
