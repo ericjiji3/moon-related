@@ -2379,8 +2379,8 @@ input[type='checkbox'] {
     height: auto;
   }
   .header__icon .icon{
-    width: 1rem;
-    height: 1rem;
+    width: 1rem!important;
+    height: 1rem!important;
   }
 }
 .header-wrapper {
