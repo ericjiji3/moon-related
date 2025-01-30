@@ -20,6 +20,11 @@ justify-content: space-between;
 
 }
 
+  .contact .button {
+    padding: 0;
+
+  }
+
 .contact img {
   max-width: 100%;
 }
@@ -229,8 +234,5 @@ justify-content: space-between;
   }
 
 
-  .contact .button {
-    padding: 0;
-    padding-right: 1rem;
-  }
+
 }
