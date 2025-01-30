@@ -230,4 +230,9 @@ justify-content: center;
   .contact .text-area {
     height: 10rem;
   }
+
+  .contact-button {
+    padding: 0;
+    padding-right: 1rem;
+  }
 }
