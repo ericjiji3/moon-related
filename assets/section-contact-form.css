@@ -109,41 +109,7 @@ justify-content: space-between;
   transform: none !important;
 }
 
-.contact .field__label {
-  font-size: 1rem !important; /* Keep label size fixed */
-  transform: none !important;
-  top: auto !important;
-  left: auto !important;
-  transition: none !important;
-  position: static !important;  /* Stop it from moving */
-}
 
-
-
-.contact .field__input::placeholder,
-.contact .text-area::placeholder {
-  font-size: 1rem !important; /* Set a fixed size */
-  transform: none !important;
-  transition: none !important;
-}
-
-
-.contact .field__input,
-.contact .text-area {
-  font-size: 1rem !important; /* Set fixed text size */
-  transform: none !important;
-  transition: none !important;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.contact .field:focus-within .field__label {
-  font-size: 1rem !important;  /* Stop size change */
-  transform: none !important;
-}
 
 
 @media screen and (min-width: 750px) {
