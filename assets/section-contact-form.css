@@ -46,9 +46,9 @@ text-wrap: none;
   bottom: 0;
 }
 
-.contact__button:hover,
-.contact__button:before,
-.contact__button:after {
+.button__parent .button:hover,
+.button__parent .button:before,
+.button__parent .button:after {
   background-color: transparent !important;
 }
 
