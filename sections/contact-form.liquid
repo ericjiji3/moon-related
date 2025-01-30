@@ -57,7 +57,7 @@
       <div class="contact__fields">
                
         <div class="field field--with-error">
-          <p>EMAIL:</p>
+          <p class="contact-divider">EMAIL:</p>
           <input
             autocomplete="email"
             type="email"
@@ -89,7 +89,7 @@
         
         
         <div class="field">
-          <p>NAME:</p>
+          <p class="contact-divider">NAME:</p>
           <input
             class="field__input"
             autocomplete="name"
@@ -111,7 +111,7 @@
           id="ContactForm-body"
           class="text-area field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder=">TYPE HERE"
+          placeholder="> TYPE HERE"
         >
           {{- form.body -}}
         </textarea>
