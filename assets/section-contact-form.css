@@ -48,6 +48,7 @@ justify-content: space-between;
 
 .field__parent {
   display: flex;
+  flex-direction: column;
 }
 .button__parent {
   display: flex;
