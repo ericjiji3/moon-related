@@ -213,16 +213,6 @@ justify-content: space-between;
 
 @media screen and (max-width: 500px) {
 
-#ContactForm{
-  width: 80vw;
-    height: 40vh;
-  background-color: #040a5bb8;
-  border-radius: 50px;
-   border-style: solid;
-  border-width: 1px;
-  border-color: #fff;
-  padding: 0px;
-}
 
   .contact__sub {
     padding: 10px;
@@ -252,9 +242,9 @@ justify-content: space-between;
   .contact__fields {
     /* margin-top: 1.2rem; */
   }
-
+/* 
 .contact .text-area {
     margin-left: 0;
-}
+} */
 
 }
