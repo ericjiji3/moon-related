@@ -1,3 +1,14 @@
+.contact {
+  width: 50vw;
+    height: 40vh;
+  background-color: #040a5bb8;
+  border-radius: 50px;
+   border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  padding: 80px;
+}
+
 .contact img {
   max-width: 100%;
 }
@@ -14,16 +25,7 @@
   margin-bottom: 1.5rem;
 }
 
-.contact {
-  width: 50vw;
-    height: 40vh;
-  background-color: #040a5bb8;
-  border-radius: 50px;
-   border-style: solid;
-  border-width: 1px;
-  border-color: #fff;
-  padding: 80px;
-}
+
 
 
 
