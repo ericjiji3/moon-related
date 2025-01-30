@@ -107,12 +107,14 @@ justify-content: space-between;
 }
 
 .contact .field__label {
-  font-size: 1rem !important; /* Adjust as needed */
+  font-size: 1rem !important; /* Keep label size fixed */
   transform: none !important;
   top: auto !important;
   left: auto !important;
   transition: none !important;
+  position: static !important;  /* Stop it from moving */
 }
+
 
 
 .contact .field__input::placeholder,
