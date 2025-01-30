@@ -2392,6 +2392,16 @@ input[type='checkbox'] {
     padding: 0 200px;
     color: white;
   }
+@media(max-width: 989px){
+    .moon-info{
+      padding: 0 100px;
+    }
+  }
+  @media(max-width: 500px){
+    .moon-info{
+      padding: 0 35px;
+    }
+  }
 .link-container{
   display: flex;
   width: 125px;
