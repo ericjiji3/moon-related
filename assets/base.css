@@ -2379,8 +2379,8 @@ input[type='checkbox'] {
     height: auto;
   }
   .header__icon .icon{
-    width: 1rem!important;
-    height: 1rem!important;
+    width: 1.5rem!important;
+    height: 1.5rem!important;
   }
 }
 .header-wrapper {
@@ -2838,7 +2838,7 @@ details[open] > .header__submenu {
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 40px;
+    gap: 15px;
   }
 }
  
