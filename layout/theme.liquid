@@ -333,7 +333,34 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
+    <script>
+        function getMilitaryTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            return `${hours}:${minutes}:${seconds}`;
+        }
 
+        function updateMilitaryTime() {
+            document.getElementById('military-time').textContent = getMilitaryTime();
+        }
+
+        // Update the time every second
+        setInterval(updateMilitaryTime, 1000);
+
+        // Initialize immediately
+        updateMilitaryTime();
+
+  function trackMouse(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+            document.getElementById('mouse-coordinates').textContent = `x: ${x}, y: ${y}`;
+        }
+
+        // Attach mousemove event listener
+        document.addEventListener('mousemove', trackMouse);
+    </script>
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
