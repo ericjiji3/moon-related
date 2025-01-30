@@ -16,8 +16,7 @@
 .contact .form__message {
   align-items: flex-start;
   margin: 2.5rem;
-text-wrap: none;
-  gap: 2px;
+  text-wrap: none;
 }
 
 .invalid-email {
