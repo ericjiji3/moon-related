@@ -79,7 +79,6 @@
               <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
               <span class="form__message">
                 {%- render 'icon-error' -%}
-                {{- form.errors.translated_fields.email | capitalize }}
                 {{ form.errors.messages.email -}}
               </span>
             </small>
