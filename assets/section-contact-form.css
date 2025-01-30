@@ -202,7 +202,7 @@ justify-content: space-between;
 
 @media screen and (max-width: 750px) {
 
-  .contact {
+#ContactForm{
   width: 80vw;
     height: 40vh;
   background-color: #040a5bb8;
