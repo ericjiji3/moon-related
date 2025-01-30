@@ -152,6 +152,9 @@ justify-content: space-between;
   transform: none !important;
 }
 
+.hidden {
+  display: none;
+}
 
 
 
