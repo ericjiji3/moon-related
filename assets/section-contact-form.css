@@ -89,6 +89,7 @@ justify-content: space-between;
   outline: none !important;
   box-shadow: none !important;
   background: transparent !important; /* Ensure no background effects */
+  margin-left: 4rem;
 }
 
 .contact .field__input:hover,
