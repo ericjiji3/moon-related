@@ -1,71 +1,103 @@
 <style>
-.moonview{
-  width: 100%;
-  height: calc(100dvh - 220px);
-  
-}
-.planets-container{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.planets-container .background-planets{
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url("https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Navigation-Desktop.gif");
-  background-size: cover;
-  width: 30%;
-  height: 32%;
-  display: block;
-}
-.planets-container .planet-container{
-  display: inline-block;
-}
-.planets-links{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.planets-container .planet-container#planet1{
-  position: absolute;
-  top: 30rem;
-  left: calc(50% - 60rem);
-  transform: translateX(-50%);
-}
-.planets-container .planet-container#planet1 img{
-  width: 30rem;
-}
-.planets-container .planet-container#planet2{
-  position: absolute;
-  top: 30rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.planets-container .planet-container#planet2 img{
-  width: 500px;
-}
+  .moonview {
+    width: 100%;
+    height: calc(100dvh - 220px);
+  }
+  .planets-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .planets-container .background-planets {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Navigation-Desktop.gif');
+    background-size: cover;
+    width: 30%;
+    height: 32%;
+    display: block;
+  }
+  .planets-container .planet-container {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+  }
+  .planets-container .planet-container img {
+    display: block;
+    margin: 0 auto;
+  }
+  .planets-container .planet-container span {
+    display: block;
+    /* margin-top: 5px; */
+    text-align: center;
+    color: white; /* Make all text white */
+  }
+  .planets-links {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Style for disabled/unlinked planets */
+  .planets-container .planet-container.disabled {
+    opacity: 0.75;
+    pointer-events: none;  /* Prevents clicking */
+    cursor: default;
+  }
+
+  /* Remove the fixed positioning styles for #planet1 and #planet2 */
+  {% for block in section.blocks %}
+    .planets-container .planet-container:nth-child({{ forloop.index }}) {
+      left: {{ block.settings.desktop_horizontal }}%;
+      top: {{ block.settings.desktop_vertical }}%;
+      transform: translate(-50%, -50%);
+    }
+
+    .planets-container .planet-container:nth-child({{ forloop.index }}) img {
+      width: {{ block.settings.desktop_size }}px;
+      height: auto;
+    }
+
+    @media screen and (max-width: 749px) {
+      .planets-container .planet-container:nth-child({{ forloop.index }}) {
+        left: {{ block.settings.mobile_horizontal }}%;
+        top: {{ block.settings.mobile_vertical }}%;
+      }
+
+      .planets-container .planet-container:nth-child({{ forloop.index }}) img {
+        width: {{ block.settings.mobile_size }}px;
+      }
+    }
+  {% endfor %}
 </style>
 <div class="planets-container">
-    <div class="background-planets"></div>
-    <div class="planets-links">
-      {%- for block in section.blocks -%}
-        <a class="planet-container" id="planet{{ forloop.index }}" href="{{ block.settings.page }}">
-          {% if block.settings.image %}
-            {% comment %} {{ block.settings.image | img_tag: block.settings.heading }}         {% endcomment %}
-            
-            <img 
-              src="{{ block.settings.image | image_url: width: 325 }}" 
-              alt="{{ block.settings.heading }}" 
-              width="325" 
-              height="325"> 
-          {% endif %}
-          <span>{{ block.settings.heading }}</span>
-        </a>
-        
-      {%- endfor -%}
-    </div>
+  <div class="background-planets"></div>
+  <div class="planets-links">
+    {%- for block in section.blocks -%}
+      <a
+        class="planet-container{% unless block.settings.page %} disabled{% endunless %}"
+        id="planet{{ forloop.index }}"
+        {% if block.settings.page %}
+          href="{{ block.settings.page }}"
+        {% endif %}
+      >
+        {% if block.settings.image %}
+          {% comment %} {{ block.settings.image | img_tag: block.settings.heading }}         {% endcomment %}
+
+          <img
+            src="{{ block.settings.image | image_url: width: 325 }}"
+            alt="{{ block.settings.heading }}"
+            width="325"
+            height="325"
+          >
+        {% endif %}
+        <span>{{ block.settings.heading }}</span>
+      </a>
+    {%- endfor -%}
+  </div>
 </div>
 {% schema %}
 {
@@ -82,27 +114,95 @@
   ],
   "max_blocks": 5,
   "blocks": [
-     {
-       "name": "Planet",
-       "type": "planet",
-       "settings": [
-         {
-           "type": "text",
-           "id": "heading",
-           "label": "Link Text"                                            
-         },                       
-         {
-           "type": "url",
-           "id": "page",
-           "label": "Page"
-         },
-         {
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-         }
-       ]
-     }
+    {
+      "name": "Planet",
+      "type": "planet",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Link Text"
+        },
+        {
+          "type": "url",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Settings"
+        },
+        {
+          "type": "range",
+          "id": "desktop_horizontal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Horizontal Position",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "desktop_vertical",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Vertical Position",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "desktop_size",
+          "min": 100,
+          "max": 800,
+          "step": 25,
+          "unit": "px",
+          "label": "Image Size",
+          "default": 325
+        },
+        {
+          "type": "header",
+          "content": "Mobile Settings"
+        },
+        {
+          "type": "range",
+          "id": "mobile_horizontal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Horizontal Position",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "mobile_vertical",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Vertical Position",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "mobile_size",
+          "min": 50,
+          "max": 400,
+          "step": 10,
+          "unit": "px",
+          "label": "Image Size",
+          "default": 200
+        }
+      ]
+    }
   ],
   "presets": [
     {
