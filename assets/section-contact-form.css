@@ -43,7 +43,11 @@
   height: 100%;
 }
 
+.field__parent {
+  display: flex;
+}
 .button__parent {
+  display: flex;
   position: relative;
   bottom: 0;
 }
