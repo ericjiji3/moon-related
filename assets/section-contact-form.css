@@ -23,7 +23,7 @@
 
 .contact .field {
   margin-bottom: 1.5rem;
-  background-color: #fff;
+      --color-background: none;
 }
 
 
