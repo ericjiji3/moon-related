@@ -46,7 +46,7 @@ text-wrap: none;
   bottom: 0;
 }
 
-.contact__button:hover {
+.contact__button:hover :before :after {
   background-color: transparent;
 }
 
