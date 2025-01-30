@@ -7,11 +7,6 @@ product-info {
     left: 50%;
     transform: translateX(-50%);
 }
-@media(max-width: 989px){
-  product-info {
-    height: 60dvh;
-}
-}
 product-info::-webkit-scrollbar {
     width: 5px; /* Adjust width */
     height: 5px; /* For horizontal scrollbar */
