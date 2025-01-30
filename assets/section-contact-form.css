@@ -60,6 +60,18 @@ justify-content: space-between;
   margin-bottom: 1rem;
 }
 
+.button__parent .button {
+  content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0;
+    box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
+}
+}
+
 .contact-divider {
   padding: 0;
   padding-left: 2.5rem;
