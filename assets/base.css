@@ -2385,7 +2385,7 @@ input[type='checkbox'] {
 }
 .link-container{
   display: flex;
-  width: 90px;
+  width: 125px;
   flex-direction: column;
   row-gap: .95rem;
   padding: 1.875rem;
@@ -2398,6 +2398,7 @@ input[type='checkbox'] {
 @media(max-width: 989px){
   .link-container{
     padding: 1rem;
+    width: 90px;
     border-radius: 20px;
     row-gap: .5rem;
   }
@@ -2522,7 +2523,7 @@ input[type='checkbox'] {
 }
 @media(max-width: 989px){
   .header__heading-link .h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 .header__heading-logo {
