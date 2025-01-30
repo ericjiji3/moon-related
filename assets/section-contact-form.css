@@ -17,7 +17,7 @@
 .contact {
   width: 100vw;
   background-color: #fff;
-  border-radius: 50px;
+border-radius: 50px;
 }
 
 @media screen and (min-width: 750px) {
