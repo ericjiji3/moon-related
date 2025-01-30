@@ -157,7 +157,6 @@ justify-content: center;
 }
 
 .contact .text-area {
-  height: 20rem;
     margin-left: 3.5rem;
 
 }
@@ -229,9 +228,6 @@ justify-content: center;
     /* margin-top: 1.2rem; */
   }
 
-  .contact .text-area {
-    height: 10rem;
-  }
 
   .contact .button {
     padding: 0;
