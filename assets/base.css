@@ -2368,6 +2368,11 @@ input[type='checkbox'] {
   border: 1px solid #ffffff;
   border-radius: 30px;
 }
+@media(max-width: 989px){
+  .link-container{
+    padding: 1rem;
+  }
+}
 .header-wrapper {
   display: block;
   position: relative;
