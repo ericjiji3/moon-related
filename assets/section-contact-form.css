@@ -167,7 +167,7 @@ justify-content: space-between;
   display: none;
 }
 
-
+.contact__sub .h-captcha { display: none}
 
 @media screen and (min-width: 750px) {
 
