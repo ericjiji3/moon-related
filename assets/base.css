@@ -2371,6 +2371,7 @@ input[type='checkbox'] {
 @media(max-width: 989px){
   .link-container{
     padding: 1rem;
+    border-radius: 20px;
   }
   .link-container img{
     width: 50px;
