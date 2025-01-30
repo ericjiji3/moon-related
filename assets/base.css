@@ -2372,6 +2372,7 @@ input[type='checkbox'] {
   .link-container{
     padding: 1rem;
     border-radius: 20px;
+    row-gap: .5rem;
   }
   .link-container img{
     width: 50px;
