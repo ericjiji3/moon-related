@@ -83,7 +83,7 @@ variant-selects {
   bottom: calc(var(--variant-pills-border-width) * -1);
   left: calc(var(--variant-pills-border-width) * -1);
   z-index: -1;
-  border-radius: var(--variant-pills-radius);
+  border-radius: 5px;
   box-shadow: var(--variant-pills-shadow-horizontal-offset) var(--variant-pills-shadow-vertical-offset)
     var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
 }
