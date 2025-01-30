@@ -2540,6 +2540,7 @@ input[type='checkbox'] {
   .header__heading,
   .header__heading-link {
     text-align: center;
+    align-content: center;
   }
 
   .header--mobile-left .header__heading,
