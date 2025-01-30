@@ -1,4 +1,16 @@
 .contact {
+  /* width: 50vw;
+    height: 40vh;
+  background-color: #040a5bb8;
+  border-radius: 50px;
+   border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  padding: 30px; */
+
+}
+
+#ContactForm{
   width: 50vw;
     height: 40vh;
   background-color: #040a5bb8;
@@ -7,10 +19,7 @@
   border-width: 1px;
   border-color: #fff;
   padding: 30px;
-
 }
-
-
 .contact__sub {
   height: 100%;
   display: flex;
