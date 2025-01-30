@@ -145,7 +145,7 @@ justify-content: space-between;
 }
 
 .contact .text-area {
-  min-height: 20px;
+  min-height: 20rem;
 }
 
 .contact .field__input:hover,
