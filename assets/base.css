@@ -2385,7 +2385,7 @@ input[type='checkbox'] {
 }
 .link-container{
   display: flex;
-  width: 75px;
+  width: 90px;
   flex-direction: column;
   row-gap: .95rem;
   padding: 1.875rem;
