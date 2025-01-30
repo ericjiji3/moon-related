@@ -14,6 +14,10 @@
   margin-bottom: 1.5rem;
 }
 
+.contact_form_class {
+  width: 100vw;
+}
+
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
