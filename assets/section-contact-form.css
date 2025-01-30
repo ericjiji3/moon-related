@@ -66,14 +66,14 @@ justify-content: space-between;
 .contact .field {
   display: flex;
   flex-direction: row;
-      flex-wrap: none !important;
+      flex-wrap: nowrap !important;
 
 }
 
 .contact .field--with-error {
   display: flex;
   flex-direction: row;
-      flex-wrap: none;
+      flex-wrap: nowrap;
 
 }
 
