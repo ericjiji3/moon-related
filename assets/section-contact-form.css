@@ -46,8 +46,10 @@ text-wrap: none;
   bottom: 0;
 }
 
-.contact__button:hover :before :after {
-  background-color: transparent;
+.contact__button:hover,
+.contact__button:before,
+.contact__button:after {
+  background-color: transparent !important;
 }
 
 .contact__sub {
