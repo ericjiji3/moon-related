@@ -15,7 +15,7 @@
   font-family: ocr;
   src: url("https://cdn.shopify.com/s/files/1/0894/4438/5073/files/OCR-a.ttf?v=1738278527");
 }
-.header--middle-center a.header__heading-link h2{
+.header__heading-link .h2{
   font-family: aSpace!important;
 }
 .product-card-wrapper .card,
