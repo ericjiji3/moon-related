@@ -132,12 +132,12 @@ product-info {
 }
 
 .shopify-payment-button__button--unbranded::selection {
-  background-color: rgba(var(--color-button-text), 0.3);
+  background-color: none;
 }
 
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: none;
 }
 
 .shopify-payment-button__more-options {
