@@ -20,6 +20,12 @@
   border-color: #fff;
   padding: 30px;
 }
+@media(max-width: 989px){
+  #ContactForm{
+  width: calc(100% - 160px);
+    margin: auto;
+}
+}
 .contact__sub {
   height: 100%;
   display: flex;
@@ -202,7 +208,7 @@ justify-content: space-between;
 
 @media screen and (max-width: 750px) {
 
-#ContactForm{
+  .contact {
   width: 80vw;
     height: 40vh;
   background-color: #040a5bb8;
