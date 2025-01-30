@@ -7,6 +7,9 @@
   border-width: 1px;
   border-color: #fff;
   padding: 30px;
+
+  animation: none !important;
+  transition: none !important;
 }
 
 .contact img {
