@@ -135,7 +135,6 @@ justify-content: space-between;
   transform: none !important;
   transition: none !important;
 
-  pointer-events: none;
     content: "";
     position: absolute;
     top: 0;
