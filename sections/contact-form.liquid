@@ -1,7 +1,7 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  /* .section-{{ section.id }}-padding {
+  .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
@@ -11,7 +11,7 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  } */
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -27,9 +27,11 @@
     {%- liquid
       assign contact_form_class = 'contact__sub isolate'
       if settings.animations_reveal_on_scroll
-        assign contact_form_class = 'contact__sub isolate scroll-trigger animate--slide-in'
+        assign contact_form_class = 'contact__sub isolate'
       endif
     -%}
+   
+    
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
@@ -52,10 +54,13 @@
           </li>
         </ul> -->
       {%- endif -%}
+
+
+
       
-              <div class="field__parent"> 
+      
+      <div class="field__parent"> 
       <div class="contact__fields">
-               
         <div class="field field--with-error">
           <p class="contact-divider">EMAIL:</p>
           <input

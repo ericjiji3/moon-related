@@ -52,6 +52,11 @@
   .moon-link .link-text{
     text-align: center;
   }
+  @media(max-width: 989px){
+    .moon-link .link-text{
+      font-size: 1.25rem;
+    }
+  }
   .list-menu {
     list-style: none;
     padding: 0;
@@ -184,7 +189,7 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="h2">MOONRELATED</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -224,7 +229,7 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="h2">MOONRELATED</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
