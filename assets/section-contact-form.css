@@ -46,6 +46,10 @@ text-wrap: none;
   bottom: 0;
 }
 
+.contact__button:hover {
+  background-color: transparent;
+}
+
 .contact__sub {
   height: 100%;
   display: flex;
