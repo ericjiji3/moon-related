@@ -14,7 +14,8 @@
 }
 
 .contact .form__message {
-display: none;}
+  align-items: flex-start;
+}
 
 .contact .icon-success {
   margin-top: 0.2rem;
