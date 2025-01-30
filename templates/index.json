@@ -40,7 +40,7 @@
           "type": "planet",
           "settings": {
             "heading": "CONTACT",
-            "page": "",
+            "page": "shopify://pages/contact",
             "image": "shopify://shop_images/Mars.gif"
           }
         }
