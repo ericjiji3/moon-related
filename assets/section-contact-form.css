@@ -193,6 +193,15 @@ justify-content: space-between;
   .contact .field__input {
     padding: 5px;
     height: fit-content;
+  
   }
+
+.contact .form__message {
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    text-wrap: none;
+
+}
   
 }
