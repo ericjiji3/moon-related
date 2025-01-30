@@ -134,6 +134,14 @@ justify-content: space-between;
   font-size: 1rem !important; /* Set fixed text size */
   transform: none !important;
   transition: none !important;
+
+  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 
