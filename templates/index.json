@@ -63,8 +63,8 @@
             "desktop_horizontal": 50,
             "desktop_vertical": 50,
             "desktop_size": 400,
-            "mobile_horizontal": 50,
-            "mobile_vertical": 50,
+            "mobile_horizontal": 30,
+            "mobile_vertical": 65,
             "mobile_size": 200
           }
         }
