@@ -8,6 +8,11 @@
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: aSpace;
   src: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/A-Space_Bold_Demo.otf');
@@ -25,7 +30,9 @@
   }
 
   .product-card-wrapper {
-    max-width: 60%;
+    max-width: 80% !important;
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
 .product-card-wrapper {
@@ -117,18 +124,26 @@
 body {
   /* Switch to blue flicker gif */
   background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Frame.png') !important;
+  /* Do not repeat the image */
   background-repeat: no-repeat;
+
+  /* Position it in the center */
   background-position: center;
+
+  /* Make it cover the entire viewport */
   background-size: cover;
+
+  /* Fix it so that it doesn't scroll with the page */
   background-attachment: fixed;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
 }
 #MainContent {
   position: absolute;
   top: 0;
   width: 100%;
   padding-top: 220px;
+  padding-bottom: 120px;
 }
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
@@ -3714,5 +3729,25 @@ details-disclosure > details {
   }
   100% {
     transform: translateX(100%) scaleX(0);
+  }
+}
+
+.frame-overlay {
+  background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Moonrelated_Frame.png?v=1738348668');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .frame-overlay {
+    /* change background image to a smaller one */
   }
 }

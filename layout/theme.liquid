@@ -299,6 +299,7 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <div class="frame-overlay"><br></div>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -311,19 +312,17 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
-       {% assign url = request.path %}
-       {% if url == '/' or url == '/pages/contact'  %}
-       <div class="moon-info">
-        <div class="coordinates-container">
-          <span>(</span>  <span id="mouse-coordinates">x: 0, y: 0</span><span>)</span>
+      {% assign url = request.path %}
+      {% if url == '/' or url == '/pages/contact' %}
+        <div class="moon-info">
+          <div class="coordinates-container">
+            <span>(</span> <span id="mouse-coordinates">x: 0, y: 0</span><span>)</span>
+          </div>
+          <span>MOONRELATED 2025</span>
+          <div class="time-container"><span>(</span><span id="military-time">00 : 00 : 00</span><span>)</span></div>
         </div>
-        <span>MOONRELATED 2025</span>
-        <div class="time-container">
-          <span>(</span><span id="military-time">00 : 00 : 00</span><span>)</span>
-        </div>
-      </div>  
-      {% else  %}
-      
+      {% else %}
+
       {% endif %}
     </main>
 
@@ -334,32 +333,32 @@
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
     <script>
-        function getMilitaryTime() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            return `${hours}:${minutes}:${seconds}`;
-        }
+      function getMilitaryTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        return `${hours}:${minutes}:${seconds}`;
+      }
 
-        function updateMilitaryTime() {
-            document.getElementById('military-time').textContent = getMilitaryTime();
-        }
+      function updateMilitaryTime() {
+        document.getElementById('military-time').textContent = getMilitaryTime();
+      }
 
-        // Update the time every second
-        setInterval(updateMilitaryTime, 1000);
+      // Update the time every second
+      setInterval(updateMilitaryTime, 1000);
 
-        // Initialize immediately
-        updateMilitaryTime();
+      // Initialize immediately
+      updateMilitaryTime();
 
-  function trackMouse(event) {
-            const x = event.clientX;
-            const y = event.clientY;
-            document.getElementById('mouse-coordinates').textContent = `x: ${x}, y: ${y}`;
-        }
+      function trackMouse(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+        document.getElementById('mouse-coordinates').textContent = `x: ${x}, y: ${y}`;
+      }
 
-        // Attach mousemove event listener
-        document.addEventListener('mousemove', trackMouse);
+      // Attach mousemove event listener
+      document.addEventListener('mousemove', trackMouse);
     </script>
     <script>
       window.shopUrl = '{{ request.origin }}';
