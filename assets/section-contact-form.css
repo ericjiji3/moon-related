@@ -213,9 +213,9 @@ justify-content: space-between;
 
 @media screen and (max-width: 500px) {
 
-#ContactForm{
-  padding: 15px;
-}
+/* #ContactForm{
+  padding: 30px;
+} */
   .contact__sub {
     padding: 10px;
     justify-content: space-between;
