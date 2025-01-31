@@ -23,6 +23,10 @@
   .header__heading-link {
     align-content: center;
   }
+
+  .product-card-wrapper {
+    max-width: 60%;
+  }
 }
 .product-card-wrapper {
   border: 1px solid white;
@@ -111,8 +115,12 @@
   }
 }
 body {
+  /* Switch to blue flicker gif */
   background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Frame.png') !important;
-  background-size: 100vw 100dvh !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100dvh;
 }
@@ -2421,10 +2429,10 @@ input[type='checkbox'] {
 }
 @media (max-width: 989px) {
   .link-container {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     width: 90px;
     border-radius: 20px;
-    row-gap: 0.5rem;
+    row-gap: 1rem;
   }
   .link-container img {
     width: 50px;
