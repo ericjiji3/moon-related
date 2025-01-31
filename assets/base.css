@@ -3748,6 +3748,6 @@ details-disclosure > details {
 
 @media (max-width: 768px) {
   .frame-overlay {
-    /* change background image to a smaller one */
+    background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/mr_frame_mobile.png?v=1738352788');
   }
 }
