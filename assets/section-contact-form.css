@@ -210,7 +210,9 @@ justify-content: space-between;
 }
 
 .contact__sub .h-captcha { display: none}
-
+.contact .field p{
+  padding-left: 0;
+}
 @media screen and (max-width: 500px) {
 
 /* #ContactForm{
