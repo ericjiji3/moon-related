@@ -21,9 +21,9 @@
             "desktop_horizontal": 30,
             "desktop_vertical": 35,
             "desktop_size": 275,
-            "mobile_horizontal": 50,
-            "mobile_vertical": 50,
-            "mobile_size": 200
+            "mobile_horizontal": 20,
+            "mobile_vertical": 21,
+            "mobile_size": 110
           }
         },
         "planet_TikVWz": {
