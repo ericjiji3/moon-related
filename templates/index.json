@@ -15,7 +15,7 @@
         "planet_bgFL4y": {
           "type": "planet",
           "settings": {
-            "heading": "ABOUT",
+            "heading": "",
             "page": "",
             "image": "shopify://shop_images/Mercury.gif",
             "desktop_horizontal": 30,
@@ -43,7 +43,7 @@
         "planet_aNXmdc": {
           "type": "planet",
           "settings": {
-            "heading": "EDITORIAL",
+            "heading": "",
             "page": "",
             "image": "shopify://shop_images/Neptune.gif",
             "desktop_horizontal": 63,
