@@ -123,18 +123,8 @@
 }
 body {
   /* Switch to blue flicker gif */
-  background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Frame.png') !important;
-  /* Do not repeat the image */
-  background-repeat: no-repeat;
-
-  /* Position it in the center */
-  background-position: center;
-
-  /* Make it cover the entire viewport */
-  background-size: cover;
-
-  /* Fix it so that it doesn't scroll with the page */
-  background-attachment: fixed;
+  background: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/MR_BG.gif') fixed right top !important;
+  background-size: cover !important;
   width: 100%;
   height: 100%;
 }
@@ -3733,7 +3723,7 @@ details-disclosure > details {
 }
 
 .frame-overlay {
-  background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Moonrelated_Frame.png?v=1738348668');
+  background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Moonrelated_Frame.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -3748,6 +3738,6 @@ details-disclosure > details {
 
 @media (max-width: 768px) {
   .frame-overlay {
-    background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/mr_frame_mobile.png?v=1738352788');
+    background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Artboard_2.png');
   }
 }
