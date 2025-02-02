@@ -9,6 +9,16 @@
   padding: 30px; */
 }
 
+.contact-form {
+  height: calc(100dvh - 220px);
+}
+
+@media (max-width: 989px) {
+  .contact-form {
+    padding-top: 100px;
+  }
+}
+
 hr.contact-divider {
   border: none;
   border-top: 2px dashed #fff; /* Dashed line */
