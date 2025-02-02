@@ -133,13 +133,13 @@ body {
   top: 0;
   width: 100%;
   padding-top: 220px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 
 @media (max-width: 989px) {
   #MainContent {
     padding-top: 170px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
 }
 
@@ -2427,7 +2427,8 @@ input[type='checkbox'] {
     padding: 0 50px;
     font-size: 1rem;
     top: auto;
-    bottom: 75px !important;
+    bottom: 10px !important;
+    padding-bottom: env(safe-area-inset-bottom); /* Might have to remove this line */
   }
 }
 .link-container {
