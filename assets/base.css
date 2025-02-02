@@ -135,6 +135,14 @@ body {
   padding-top: 220px;
   padding-bottom: 120px;
 }
+
+@media (max-width: 989px) {
+  #MainContent {
+    padding-top: 170px;
+    padding-bottom: 50px;
+  }
+}
+
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
@@ -2416,8 +2424,10 @@ input[type='checkbox'] {
 }
 @media (max-width: 500px) {
   .moon-info {
-    padding: 0 35px;
-    font-size: 1.2rem;
+    padding: 0 50px;
+    font-size: 1rem;
+    top: auto;
+    bottom: 75px !important;
   }
 }
 .link-container {
