@@ -9,6 +9,15 @@
   padding: 30px; */
 }
 
+hr.contact-divider {
+  border: none;
+  border-top: 2px dashed #fff; /* Dashed line */
+  background-color: transparent;
+  width: 90%; /* Ensure it doesn't overflow */
+  margin: 20px auto !important; /* Add spacing and center it */
+  min-height: 2px;
+}
+
 #ContactForm {
   width: 100%;
   height: 40vh;
