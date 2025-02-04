@@ -413,5 +413,17 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      document.querySelectorAll('.card-wrapper').forEach(function (card) {
+        card.addEventListener('click', function (e) {
+          // If the click was on a variant link (or inside one), do nothing.
+          if (e.target.closest('.card-product__variant-option')) return;
+
+          // Otherwise, navigate to the product's default URL.
+          window.location.href = e.currentTarget.querySelector('a.full-unstyled-link').href;
+        });
+      });
+    </script>
   </body>
 </html>
