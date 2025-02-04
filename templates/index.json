@@ -81,7 +81,7 @@
         "background_image": "shopify://shop_images/Navigation-Desktop.gif",
         "desktop_background_size": 500,
         "mobile_background_size": 300,
-        "desktop_y": 0,
+        "desktop_y": 5,
         "mobile_y": 40
       }
     }
