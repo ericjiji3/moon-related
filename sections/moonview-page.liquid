@@ -10,14 +10,25 @@
   }
   .planets-container .background-planets {
     position: absolute;
-    top: 0%;
+    top: {{ section.settings.desktop_y }}%;
     left: 50%;
     transform: translateX(-50%);
     background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Navigation-Desktop.gif');
     background-size: cover;
-    width: 30%;
-    height: 32%;
+    width: {{ section.settings.desktop_background_size }}px;
+    height: auto;
+    min-height: calc({{ section.settings.desktop_background_size }}px/1.986);
     display: block;
+  }
+
+  @media(max-width: 989px){
+    .planets-container .background-planets {
+      top: {{ section.settings.mobile_y }}%;
+      width: {{ section.settings.mobile_background_size }}px;
+      height: auto;
+      min-height: calc({{ section.settings.mobile_background_size }}px/1.986);
+      transform: translate(-50%, -50%);
+    }
   }
   .planets-container .planet-container {
     display: inline-block;
@@ -110,6 +121,50 @@
       "type": "text",
       "id": "title",
       "label": "Moonview"
+    },
+    {
+      "type": "header",
+      "content": "Background Settings"
+    },
+    {
+      "type": "range",
+      "id": "desktop_background_size",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Desktop Background Size",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "mobile_background_size",
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile Background Size",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "desktop_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Desktop Y Offset",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Mobile Y Offset",
+      "default": 50
     }
   ],
   "max_blocks": 5,
