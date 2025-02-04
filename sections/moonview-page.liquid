@@ -13,7 +13,7 @@
     top: {{ section.settings.desktop_y }}%;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Navigation-Desktop.gif');
+    background-image: url('{{ section.settings.background_image | image_url }}');
     background-size: cover;
     width: {{ section.settings.desktop_background_size }}px;
     height: auto;
@@ -125,6 +125,11 @@
     {
       "type": "header",
       "content": "Background Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image/GIF"
     },
     {
       "type": "range",
