@@ -77,7 +77,12 @@
       ],
       "custom_css": [],
       "settings": {
-        "title": "Moonview"
+        "title": "Moonview",
+        "background_image": "shopify://shop_images/Navigation-Desktop.gif",
+        "desktop_background_size": 500,
+        "mobile_background_size": 300,
+        "desktop_y": 0,
+        "mobile_y": 40
       }
     }
   },
