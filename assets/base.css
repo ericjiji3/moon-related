@@ -3771,3 +3771,12 @@ details-disclosure > details {
     background-image: url('https://cdn.shopify.com/s/files/1/0894/4438/5073/files/Artboard_2.png');
   }
 }
+
+@media (max-width: 989px) {
+  .product-grid-section {
+    padding-bottom: 7.5dvh;
+  }
+}
+.product-grid-section {
+  padding-bottom: 10dvh;
+}

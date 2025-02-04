@@ -136,7 +136,7 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
+  padding: 1.3rem 1rem 0.3rem 1rem;
 }
 
 .card:not(.ratio) > .card__content {
@@ -406,6 +406,47 @@
     text-decoration: underline;
     text-underline-offset: 0.3rem;
   }
+}
+
+.card-product__variants {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.card-product__variant-group {
+  /* margin-bottom: 0.8rem; */
+}
+
+.card-product__variant-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.card-product__variant-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.card-product__variant-option {
+  padding: 0.2rem 0.8rem;
+  border: 1px solid rgba(var(--color-base-text), 0.1);
+  border-radius: 2px;
+  text-decoration: none;
+  color: rgba(var(--color-base-text), 0.9);
+  transition: all 0.2s ease;
+}
+
+.card-product__variant-option:hover {
+  border-color: rgba(var(--color-base-text), 0.2);
+  color: rgba(var(--color-base-text), 1);
+}
+
+.card-product__variant-option.sold-out {
+  opacity: 0.5;
+  text-decoration: line-through;
+  pointer-events: none;
 }
 
 .card--standard.card--media .card__inner .card__information,

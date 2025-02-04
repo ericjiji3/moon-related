@@ -16,6 +16,7 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
+  - show_variants: {Boolean} Show product variants. Default: false (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -285,6 +286,47 @@
                 </div>
                 </quantity-popover>
               {% endif %}
+            {%- endif -%}
+
+            {% comment %} Add variant display here {% endcomment %}
+            {%- if show_variants and card_product.available -%}
+              {%- assign option_types = '' | split: '' -%}
+              {%- for option in card_product.options_with_values -%}
+                {%- assign option_types = option_types | concat: option.name | uniq -%}
+              {%- endfor -%}
+
+              <div class="card-product__variants">
+                {%- for option1_value in card_product.options_with_values[0].values -%}
+                  {%- assign has_available_variants = false -%}
+                  {%- assign variants_for_option1 = card_product.variants | where: 'option1', option1_value -%}
+
+                  {%- for variant in variants_for_option1 -%}
+                    {%- if variant.available -%}
+                      {%- assign has_available_variants = true -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+
+                  {%- if has_available_variants -%}
+                    <div class="card-product__variant-group">
+                      <span class="card-product__variant-label">{{ option1_value }}</span>
+                      <div class="card-product__variant-options">
+                        {%- for variant in variants_for_option1 -%}
+                          <a
+                            href="{{ card_product.url }}?variant={{ variant.id }}"
+                            class="card-product__variant-option{% unless variant.available %} sold-out{% endunless %}"
+                            {% unless variant.available %}
+                              aria-disabled="true"
+                            {% endunless %}
+                          >
+                            {{ variant.option2 }}
+                          </a>
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
             {%- endif -%}
           </div>
         </div>

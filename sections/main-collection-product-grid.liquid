@@ -170,6 +170,7 @@
                     show_secondary_image: section.settings.show_secondary_image,
                     show_vendor: section.settings.show_vendor,
                     show_rating: section.settings.show_rating,
+                    show_variants: section.settings.show_variants,
                     lazy_load: lazy_load,
                     skip_styles: skip_card_product_styles,
                     quick_add: section.settings.quick_add,
@@ -196,7 +197,7 @@
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
-  "class": "section",
+  "class": "section product-grid-section",
   "settings": [
     {
       "type": "range",
@@ -409,6 +410,13 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "checkbox",
+      "id": "show_variants",
+      "default": false,
+      "label": "Display variants",
+      "info": "Show variant options on product cards"
     }
   ]
 }
