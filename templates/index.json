@@ -23,7 +23,7 @@
             "desktop_size": 275,
             "mobile_horizontal": 20,
             "mobile_vertical": 21,
-            "mobile_size": 110
+            "mobile_size": 90
           }
         },
         "planet_TikVWz": {
@@ -37,7 +37,7 @@
             "desktop_size": 325,
             "mobile_horizontal": 72,
             "mobile_vertical": 30,
-            "mobile_size": 200
+            "mobile_size": 170
           }
         },
         "planet_aNXmdc": {
@@ -51,7 +51,7 @@
             "desktop_size": 175,
             "mobile_horizontal": 69,
             "mobile_vertical": 70,
-            "mobile_size": 120
+            "mobile_size": 100
           }
         },
         "planet_b3UB6c": {
@@ -65,7 +65,7 @@
             "desktop_size": 400,
             "mobile_horizontal": 30,
             "mobile_vertical": 54,
-            "mobile_size": 200
+            "mobile_size": 170
           }
         }
       },
