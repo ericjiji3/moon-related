@@ -41,7 +41,7 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper underline-title-hover">
     <div
       class="
         card card--{{ settings.card_style }}
@@ -290,11 +290,6 @@
 
             {% comment %} Add variant display here {% endcomment %}
             {%- if show_variants and card_product.available -%}
-              {%- assign option_types = '' | split: '' -%}
-              {%- for option in card_product.options_with_values -%}
-                {%- assign option_types = option_types | concat: option.name | uniq -%}
-              {%- endfor -%}
-
               <div class="card-product__variants">
                 {%- for option1_value in card_product.options_with_values[0].values -%}
                   {%- assign has_available_variants = false -%}
@@ -318,6 +313,7 @@
                             {% unless variant.available %}
                               aria-disabled="true"
                             {% endunless %}
+                            onclick="event.preventDefault(); window.location.href='{{ card_product.url }}?variant={{ variant.id }}'"
                           >
                             {{ variant.option2 }}
                           </a>
@@ -614,7 +610,7 @@
       assign ratio = 0.8
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper underline-title-hover">
     <div
       class="
         card card--{{ settings.card_style }}
